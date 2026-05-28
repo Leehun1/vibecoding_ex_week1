@@ -1,3 +1,33 @@
+// Popup Logic
+const popup = document.getElementById('stockPopup');
+const closeBtn = document.getElementById('closePopup');
+const popupCta = document.getElementById('popupCta');
+
+window.addEventListener('load', () => {
+    // Show popup after 1.5 seconds
+    setTimeout(() => {
+        if (popup) popup.style.display = 'flex';
+    }, 1500);
+});
+
+if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+        popup.style.display = 'none';
+    });
+}
+
+if (popupCta) {
+    popupCta.addEventListener('click', () => {
+        popup.style.display = 'none';
+    });
+}
+
+window.addEventListener('click', (e) => {
+    if (e.target === popup) {
+        popup.style.display = 'none';
+    }
+});
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

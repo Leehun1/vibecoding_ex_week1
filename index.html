@@ -25,9 +25,22 @@
         </nav>
     </header>
 
+    <!-- Popup -->
+    <div class="popup-overlay" id="stockPopup">
+        <div class="popup-content">
+            <span class="popup-close" id="closePopup">&times;</span>
+            <div class="popup-img"></div>
+            <h2>⚠️ 재고 부족 알림</h2>
+            <p>현재 <strong>SeroRest</strong>의 인기로 인해 재고가 급격히 소진되고 있습니다.</p>
+            <p style="margin: 1rem 0; font-weight: 700;">오늘 주문 가능한 수량: <span style="color: #ef4444;">12개</span></p>
+            <a href="#buy" class="btn-primary" id="popupCta">지금 혜택받기</a>
+        </div>
+    </div>
+
     <main>
         <section class="hero">
             <div class="container hero-content">
+                <div class="urgency-badge">🔥 실시간 인기: 마지막 12개 남음</div>
                 <h1>더 깊은 휴식.<br><span class="accent">더 밝은 아침.</span></h1>
                 <p>신체가 생성하는 천연 수면 호르몬의 힘을 깨우세요. SeroRest는 더 빨리 잠들고, 진정으로 상쾌한 아침을 맞이하도록 돕습니다.</p>
                 <div class="hero-btns">
