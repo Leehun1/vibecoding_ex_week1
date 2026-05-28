@@ -27,8 +27,19 @@ window.addEventListener('click', (e) => {
         popup.style.display = 'none';
     }
 });
+// Review Form Submission
+const reviewForm = document.getElementById('reviewForm');
+if (reviewForm) {
+    reviewForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('후기가 성공적으로 등록되었습니다! 검토 후 게시됩니다.');
+        reviewForm.reset();
+    });
+}
 
 // Smooth scrolling for navigation links
+...
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
